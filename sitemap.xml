@@ -146,14 +146,14 @@
 
   
   <url>
-    <loc>https://wang-senhai.github.io/blog/tags/markdown/</loc>
+    <loc>https://wang-senhai.github.io/blog/tags/test/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wang-senhai.github.io/blog/tags/test/</loc>
+    <loc>https://wang-senhai.github.io/blog/tags/markdown/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -168,27 +168,6 @@
   
   <url>
     <loc>https://wang-senhai.github.io/blog/tags/hexo/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wang-senhai.github.io/blog/tags/fix/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wang-senhai.github.io/blog/tags/next/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wang-senhai.github.io/blog/tags/swig/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -229,7 +208,35 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://wang-senhai.github.io/blog/tags/fix/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wang-senhai.github.io/blog/tags/next/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wang-senhai.github.io/blog/tags/swig/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://wang-senhai.github.io/blog/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://wang-senhai.github.io/blog/categories/%E5%8D%9A%E5%AE%A2/</loc>
@@ -239,7 +246,14 @@
   </url>
   
   <url>
-    <loc>https://wang-senhai.github.io/blog/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://wang-senhai.github.io/blog/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wang-senhai.github.io/blog/categories/%E6%8A%80%E6%9C%AF/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -254,20 +268,6 @@
   
   <url>
     <loc>https://wang-senhai.github.io/blog/categories/%E5%8D%9A%E5%AE%A2/MarkDown/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wang-senhai.github.io/blog/categories/%E6%8A%80%E6%9C%AF/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wang-senhai.github.io/blog/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%A7%8B/</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
