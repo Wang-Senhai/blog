@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://myblog.senhai.wang/2026/02/15/%E6%96%B0%E5%B9%B4%E8%B4%BA%E8%AF%8D/</loc>
+    
+    <lastmod>2026-02-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://myblog.senhai.wang/2019/07/09/%E6%88%91%E7%9A%84HEXO/</loc>
     
     <lastmod>2026-02-13</lastmod>
@@ -139,7 +148,7 @@
 
   <url>
     <loc>https://myblog.senhai.wang/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -147,84 +156,98 @@
   
   <url>
     <loc>https://myblog.senhai.wang/tags/markdown/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/test/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://myblog.senhai.wang/tags/blog/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/hexo/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://myblog.senhai.wang/tags/blog/</loc>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/fix/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/next/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/swig/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/AI/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/Python/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/MySQL/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://myblog.senhai.wang/tags/%E6%96%B0%E5%B9%B4/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://myblog.senhai.wang/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -233,42 +256,49 @@
   
   <url>
     <loc>https://myblog.senhai.wang/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/categories/%E5%8D%9A%E5%AE%A2/Hexo/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/categories/%E5%8D%9A%E5%AE%A2/MarkDown/</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://myblog.senhai.wang/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%A7%8B/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://myblog.senhai.wang/categories/%E6%8A%80%E6%9C%AF/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://myblog.senhai.wang/categories/%E6%8A%80%E6%9C%AF/%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://myblog.senhai.wang/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
