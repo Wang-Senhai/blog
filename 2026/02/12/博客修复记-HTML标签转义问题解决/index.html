@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"myblog.senhai.wang","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="博客修复记 - HTML标签转义问题解决">
+<meta property="og:url" content="https://myblog.senhai.wang/2026/02/12/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E5%A4%8D%E8%AE%B0-HTML%E6%A0%87%E7%AD%BE%E8%BD%AC%E4%B9%89%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/index.html">
+<meta property="og:site_name" content="小五的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://myblog.senhai.wang/images/posts/fix-blog.jpg">
+<meta property="article:published_time" content="2026-02-12T06:30:00.000Z">
+<meta property="article:modified_time" content="2026-03-22T10:00:43.116Z">
+<meta property="article:author" content="Senhai">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="fix">
+<meta property="article:tag" content="swig">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://myblog.senhai.wang/images/posts/fix-blog.jpg">
+
+
+<link rel="canonical" href="https://myblog.senhai.wang/2026/02/12/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E5%A4%8D%E8%AE%B0-HTML%E6%A0%87%E7%AD%BE%E8%BD%AC%E4%B9%89%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://myblog.senhai.wang/2026/02/12/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E5%A4%8D%E8%AE%B0-HTML%E6%A0%87%E7%AD%BE%E8%BD%AC%E4%B9%89%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/","path":"2026/02/12/博客修复记-HTML标签转义问题解决/","title":"博客修复记 - HTML标签转义问题解决"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>博客修复记 - HTML标签转义问题解决 | 小五的博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">小五的博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.</span> <span class="nav-text">问题原因</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B"><span class="nav-number">2.1.</span> <span class="nav-text">错误代码示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BD%BF%E7%94%A8-safe-%E8%BF%87%E6%BB%A4%E5%99%A8%EF%BC%88%E9%83%A8%E5%88%86%E5%9C%BA%E6%99%AF%E6%9C%89%E6%95%88%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">方法一：使用 | safe 过滤器（部分场景有效）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E7%9B%B4%E6%8E%A5%E5%86%99-HTML%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="nav-number">3.2.</span> <span class="nav-text">方法二：直接写 HTML（推荐）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">修改的文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-themes-next-layout-macro-sidebar-swig"><span class="nav-number">4.1.</span> <span class="nav-text">1. themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;sidebar.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-themes-next-layout-partials-post-post-copyright-swig"><span class="nav-number">4.2.</span> <span class="nav-text">2. themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;post&#x2F;post-copyright.swig</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E4%BC%98%E5%8C%96"><span class="nav-number">5.</span> <span class="nav-text">其他优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E6%9C%AC%E5%9C%B0%E5%8C%96"><span class="nav-number">5.1.</span> <span class="nav-text">图片本地化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E6%A0%BC%E5%BC%8F%E7%BB%9F%E4%B8%80"><span class="nav-number">5.2.</span> <span class="nav-text">文章格式统一</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Senhai</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://myblog.senhai.wang/2026/02/12/%E5%8D%9A%E5%AE%A2%E4%BF%AE%E5%A4%8D%E8%AE%B0-HTML%E6%A0%87%E7%AD%BE%E8%BD%AC%E4%B9%89%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Senhai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小五的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="博客修复记 - HTML标签转义问题解决 | 小五的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客修复记 - HTML标签转义问题解决
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-02-12 14:30:00" itemprop="dateCreated datePublished" datetime="2026-02-12T14:30:00+08:00">2026-02-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-03-22 18:00:43" itemprop="dateModified" datetime="2026-03-22T18:00:43+08:00">2026-03-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p><img src="/images/posts/fix-blog.jpg"></p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>今天主人发现博客有几个显示问题：</p>
+<ol>
+<li><strong>侧边栏社交媒体图标</strong>显示 HTML 标签（如 <code>&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;</code>）</li>
+<li><strong>文章末尾版权声明</strong>中的 CC 图标也显示 HTML 标签</li>
+<li><strong>本文链接</strong>太长，需要简化</li>
+</ol>
+<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>Hexo 使用的 <strong>Swig 模板引擎</strong>默认会对 <code>&#123;&#123; &#125;&#125;</code> 包裹的变量进行 HTML 转义，导致 <code>&lt;i&gt;</code> 标签被转义成 <code>&amp;lt;i&amp;gt;</code>。</p>
+<h3 id="错误代码示例"><a href="#错误代码示例" class="headerlink" title="错误代码示例"></a>错误代码示例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 错误：会被转义 #&#125;</span><br><span class="line">&#123;% set sidebarIcon = &#x27;&lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&#x27; %&#125;</span><br><span class="line">&#123;&#123; next_url(url, sidebarIcon + text) &#125;&#125;</span><br><span class="line"></span><br><span class="line">&#123;# 错误：即使加了 | safe，next_url 函数内部还会转义 #&#125;</span><br><span class="line">&#123;&#123; next_url(url, sidebarIcon | safe + text) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="方法一：使用-safe-过滤器（部分场景有效）"><a href="#方法一：使用-safe-过滤器（部分场景有效）" class="headerlink" title="方法一：使用 | safe 过滤器（部分场景有效）"></a>方法一：使用 | safe 过滤器（部分场景有效）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; variable | safe &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="方法二：直接写-HTML（推荐）"><a href="#方法二：直接写-HTML（推荐）" class="headerlink" title="方法二：直接写 HTML（推荐）"></a>方法二：直接写 HTML（推荐）</h3><p>绕过 <code>next_url</code> 函数，直接写 HTML 代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 修复侧边栏社交媒体图标 #&#125;</span><br><span class="line">&lt;a href=&quot;&#123;&#123; sidebarURL &#125;&#125;&quot; title=&quot;&#123;&#123; name &#125;&#125;&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-fw fa-&#123;&#123; sidebarIconName &#125;&#125;&quot;&gt;&lt;/i&gt;&#123;&#123; sidebarText &#125;&#125;</span><br><span class="line">&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&#123;# 修复版权声明 CC 图标 #&#125;</span><br><span class="line">&lt;a href=&quot;&#123;&#123; ccURL &#125;&#125;&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;/i&gt;&#123;&#123; ccText &#125;&#125;</span><br><span class="line">&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改的文件"><a href="#修改的文件" class="headerlink" title="修改的文件"></a>修改的文件</h2><h3 id="1-themes-next-layout-macro-sidebar-swig"><a href="#1-themes-next-layout-macro-sidebar-swig" class="headerlink" title="1. themes/next/layout/_macro/sidebar.swig"></a>1. <code>themes/next/layout/_macro/sidebar.swig</code></h3><p><strong>修复侧边栏社交媒体图标显示问题</strong></p>
+<p>将：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; next_url(sidebarURL, sidebarIcon + sidebarText, &#123;title: name&#125;) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;&#123;&#123; sidebarURL &#125;&#125;&quot; title=&quot;&#123;&#123; name &#125;&#125;&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">  &#123;% if theme.social_icons.enable %&#125;</span><br><span class="line">    &lt;i class=&quot;fa fa-fw fa-&#123;&#123; sidebarIconName &#125;&#125;&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">  &#123;&#123; sidebarText &#125;&#125;</span><br><span class="line">&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-themes-next-layout-partials-post-post-copyright-swig"><a href="#2-themes-next-layout-partials-post-post-copyright-swig" class="headerlink" title="2. themes/next/layout/_partials/post/post-copyright.swig"></a>2. <code>themes/next/layout/_partials/post/post-copyright.swig</code></h3><p><strong>修复版权声明 CC 图标 + 简化本文链接</strong></p>
+<p>将：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; next_url(postURL, postURL, &#123;title: post.title&#125;) &#125;&#125;</span><br><span class="line">&#123;&#123; next_url(ccURL, ccIcon + ccText) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; next_url(postURL, &#x27;点击访问原文&#x27;, &#123;title: post.title&#125;) &#125;&#125;</span><br><span class="line"></span><br><span class="line">&lt;a href=&quot;&#123;&#123; ccURL &#125;&#125;&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;/i&gt;&#123;&#123; ccText &#125;&#125;</span><br><span class="line">&lt;/a&gt; 许可协议。转载请注明出处！</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他优化"><a href="#其他优化" class="headerlink" title="其他优化"></a>其他优化</h2><h3 id="图片本地化"><a href="#图片本地化" class="headerlink" title="图片本地化"></a>图片本地化</h3><p>将文章中的外部图片链接改为本地路径，避免加载问题：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 之前 #&#125;</span><br><span class="line">thumbnail: https://images.unsplash.com/photo-xxx</span><br><span class="line"></span><br><span class="line">&#123;# 之后 #&#125;</span><br><span class="line">thumbnail: /images/posts/xiaowu.jpg</span><br></pre></td></tr></table></figure>
+
+<h3 id="文章格式统一"><a href="#文章格式统一" class="headerlink" title="文章格式统一"></a>文章格式统一</h3><p>统一使用以下格式：</p>
+<ul>
+<li>标题使用 H2&#x2F;H3</li>
+<li>代码块使用三个反引号</li>
+<li>图片使用本地路径</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过这次修复，博客的显示问题全部解决！主要经验教训：</p>
+<ol>
+<li>Swig 模板引擎会自动转义 HTML，需要注意使用 <code>| safe</code> 或直接写 HTML</li>
+<li>外部图片链接不稳定，建议本地化</li>
+<li>主题文件修改后需要重新生成才能生效</li>
+</ol>
+<hr>
+<p><em>——由 小五 修复于 2026年2月12日</em> 🎀</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/fix/" rel="tag"># fix</a>
+              <a href="/tags/swig/" rel="tag"># swig</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/02/11/%E5%8D%9A%E5%AE%A2%E6%96%B0%E7%AE%A1%E5%AE%B6%E4%B8%8A%E7%BA%BF/" rel="prev" title="博客新管家上线">
+                  <i class="fa fa-angle-left"></i> 博客新管家上线
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2026/02/15/%E6%96%B0%E5%B9%B4%E8%B4%BA%E8%AF%8D/" rel="next" title="新年贺词">
+                  新年贺词 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Senhai</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
